@@ -24,6 +24,8 @@ public class Book {
     }
 
     public void setPublishYear(int publishYear) {
+        if (publishYear >= 0) {
         this.publishYear = publishYear;
+        }
     }
 }
