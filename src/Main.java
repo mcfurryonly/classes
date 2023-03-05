@@ -7,6 +7,8 @@ public class Main {
 
         System.out.println("Книга: " + theCroniclesOfNarnia.getName() + " Автор: " + cliveStaplesLewis.getFirstName() + "" + cliveStaplesLewis.getLastName() + " Год: " + theCroniclesOfNarnia.getPublishYear());
         System.out.println("Книга: " + lordOfTheRings.getName() + " Автор: " + johnRonaldReuelTolkien.getFirstName() + "" + johnRonaldReuelTolkien.getLastName() + " Год: " + lordOfTheRings.getPublishYear());
+        theCroniclesOfNarnia.setPublishYear(1000);
+        System.out.println("Книга: " + theCroniclesOfNarnia.getName() + " Автор: " + cliveStaplesLewis.getFirstName() + "" + cliveStaplesLewis.getLastName() + " Год: " + theCroniclesOfNarnia.getPublishYear());
 
     }
 }
