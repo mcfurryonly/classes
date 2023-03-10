@@ -24,6 +24,12 @@ public class Book {
     }
 
     public void setPublishYear(int publishYear) {
+        if (publishYear >= 0) {
         this.publishYear = publishYear;
+        }
+    }
+    @Override
+    public String toString() {
+        return "Book: " + name + " "  + author + " publishYear: " + publishYear;
     }
 }
