@@ -1,14 +1,17 @@
 public class Main {
     public static void main(String[] args) {
         Author cliveStaplesLewis = new Author("Клайв Стейплз ", "Льюис");
-        Author johnRonaldReuelTolkien = new Author("Джон Рональд Руэл", "Толкин");
+        Author johnRonaldReuelTolkien = new Author("Джон Рональд Руэл ", "Толкин");
         Book theCroniclesOfNarnia = new Book("Хроники Нарнии", cliveStaplesLewis,1950);
         Book lordOfTheRings = new Book("Властелин Колец", johnRonaldReuelTolkien, 1954);
 
         System.out.println("Книга: " + theCroniclesOfNarnia.getName() + " Автор: " + cliveStaplesLewis.getFirstName() + "" + cliveStaplesLewis.getLastName() + " Год: " + theCroniclesOfNarnia.getPublishYear());
         System.out.println("Книга: " + lordOfTheRings.getName() + " Автор: " + johnRonaldReuelTolkien.getFirstName() + "" + johnRonaldReuelTolkien.getLastName() + " Год: " + lordOfTheRings.getPublishYear());
-        theCroniclesOfNarnia.setPublishYear(1000);
-        System.out.println("Книга: " + theCroniclesOfNarnia.getName() + " Автор: " + cliveStaplesLewis.getFirstName() + "" + cliveStaplesLewis.getLastName() + " Год: " + theCroniclesOfNarnia.getPublishYear());
+        System.out.println(cliveStaplesLewis.hashCode());
+        System.out.println(johnRonaldReuelTolkien.hashCode());
+        System.out.println(cliveStaplesLewis.toString());
+        System.out.println(theCroniclesOfNarnia.toString());
+
 
     }
 }
